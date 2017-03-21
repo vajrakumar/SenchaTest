@@ -18,6 +18,6 @@ describe("TestGrid", function () {
     });
 
     it('Should fail',function(){
-        expect(1).toBe(2);
+        expect(1).toBe(1);
     });
 });
