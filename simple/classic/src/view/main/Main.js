@@ -20,43 +20,94 @@ Ext.define('simple.view.main.Main', {
 
     controller: 'main',
     viewModel: 'main',
-
-    defaults: {
-        xtype: 'panel',
-        buttons: [{
-            text: 'refresh',
-            tooltip: 'Refresh form Data',
-            // hidden:true,
-            handler: function (btn) {
-                btn.up('panel').down('panel').setTitle('Hey refresh clicked!');
-            }
-        },
-        {
-            text: 'help',
-            tooltip: 'Get Help',
-            handler: function (btn) {
-                btn.up('panel').down('panel').setTitle('Hey help clicked!');
-            }
-        }]
-    },
     items: [{
         title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
-        items: { xtype: 'mainlist', title: 'In tab1' }
-
-
+        items: {
+            xtype: 'mainlist',
+            title: 'In tab1',
+            buttons: [{
+                text: 'refresh',
+                tooltip: 'Refresh form Data',
+                // hidden:true,
+                handler: function (btn) {
+                    btn.up('panel').down('panel').setTitle('Hey refresh clicked!');
+                }
+            },
+            {
+                text: 'help',
+                tooltip: 'Get Help',
+                handler: function (btn) {
+                    btn.up('panel').down('panel').setTitle('Hey help clicked!');
+                }
+            }]
+        }
     }, {
         title: 'Users',
         iconCls: 'fa-user',
-        items: { xtype: 'mainlist', title: 'In tab2' }
+        items: {
+            xtype: 'mainlist',
+            title: 'In tab2',
+            buttons: [{
+                text: 'refresh',
+                tooltip: 'Refresh form Data',
+                // hidden:true,
+                handler: function (btn) {
+                    btn.up('panel').down('panel').setTitle('Hey refresh clicked!');
+                }
+            },
+            {
+                text: 'help',
+                tooltip: 'Get Help',
+                handler: function (btn) {
+                    btn.up('panel').down('panel').setTitle('Hey help clicked!');
+                }
+            }]
+        }
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
-        items: { xtype: 'mainlist', title: 'In tab3' }
+        items: {
+            xtype: 'mainlist',
+            title: 'In tab3',
+            buttons: [{
+                text: 'refresh',
+                tooltip: 'Refresh form Data',
+                // hidden:true,
+                handler: function (btn) {
+                    btn.up('panel').down('panel').setTitle('Hey refresh clicked!');
+                }
+            },
+            {
+                text: 'help',
+                tooltip: 'Get Help',
+                handler: function (btn) {
+                    btn.up('panel').down('panel').setTitle('Hey help clicked!');
+                }
+            }]
+        }
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
-        items: { xtype: 'mainlist', title: 'In tab4' }
+        items: {
+            xtype: 'mainlist',
+            title: 'In tab4',
+            buttons: [{
+                text: 'refresh',
+                tooltip: 'Refresh form Data',
+                // hidden:true,
+                handler: function (btn) {
+                    btn.up('panel').down('panel').setTitle('Hey refresh clicked!');
+                }
+            },
+            {
+                text: 'help',
+                tooltip: 'Get Help',
+                handler: function (btn) {
+                    btn.up('panel').down('panel').setTitle('Hey help clicked!');
+                }
+            }]
+        }
     }]
 });
