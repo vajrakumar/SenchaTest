@@ -5,8 +5,10 @@ describe("tabs", function () {
             /*return ST.panel('app-main').gotoPanel('tab').gotoGrid('mainlist').gotoButton('[text=help]').and(function(){
                 debugger;
             });*/
-            return ST.button("=>div[arai-hidden=false]^mainlist button[text=help]");
+            //return ST.button("=>div[aria-hidden=false]^mainlist button[text=help]");
             //.gotoPanel('mainlist').gotoButton('[text=help]');
+
+            return ST.button('button[text=help]');
         }
     }
     beforeAll(function () {
