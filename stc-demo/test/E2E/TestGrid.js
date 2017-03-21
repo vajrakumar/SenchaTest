@@ -17,7 +17,4 @@ describe("TestGrid", function () {
 
     });
 
-    it('Should fail',function(){
-        expect(1).toBe(1);
-    });
 });
