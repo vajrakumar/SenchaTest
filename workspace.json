@@ -1,0 +1,42 @@
+{
+    "apps": [
+        "stc-demo",
+        "simple"
+    ],
+    "frameworks": {
+        "ext": {
+            "path": "ext",
+            "version": "6.2.1.167"
+        }
+    },
+    "build": {
+        "dir": "${workspace.dir}/build"
+    },
+    "packages": {
+        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages",
+        "extract": "${workspace.dir}/packages/remote"
+    },
+    "name": "Workspace",
+    "tests": {
+        "path": "test/project.json",
+        "browser": {
+            "farms": [
+                {
+                    "name": "Generic WebDriver",
+                    "type": "generic",
+                    "host": "localhost",
+                    "port": 4444,
+                    "sessionLimit": 5,
+                    "pools": [
+                        {
+                            "name": "local",
+                            "path": "local.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "archiveRoot": "/consultant",
+        "archiveServer": "http://localhost:1903"
+    }
+}

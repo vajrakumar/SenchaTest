@@ -1,0 +1,16 @@
+# sencha
+**/temp
+/ext
+/build
+
+# manifest
+**/*.json
+**/*.jsonp
+!**/data/*.json
+!**/project.json
+!**/app.json
+!**/workspace.json
+!**local.json
+
+# bootstrap
+**/bootstrap.*

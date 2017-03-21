@@ -1,0 +1,16 @@
+{
+    "framework": "jasmine",
+    "libs": [],
+    "coverageFilters": [],
+    "scenarios": [
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "sandbox": true,
+            "globals": "*",
+            "directory": "E2E",
+            "name": "E2E",
+            "page": "http://localhost:1841/simple"
+        }
+    ]
+}
