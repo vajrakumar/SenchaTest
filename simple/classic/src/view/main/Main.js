@@ -32,14 +32,16 @@ Ext.define('simple.view.main.Main', {
                 tooltip: 'Refresh form Data',
                 // hidden:true,
                 handler: function (btn) {
-                    btn.up('panel').down('panel').setTitle('Hey refresh clicked!');
+                    var pnl = btn.up('panel');
+                    pnl.setTitle(pnl.getTitle() + ' : Hey refresh clicked!');
                 }
             },
             {
                 text: 'help',
                 tooltip: 'Get Help',
                 handler: function (btn) {
-                    btn.up('panel').down('panel').setTitle('Hey help clicked!');
+                    var pnl = btn.up('panel');
+                    pnl.setTitle(pnl.getTitle() + ' : Hey help clicked!');
                 }
             }]
         }
@@ -54,14 +56,16 @@ Ext.define('simple.view.main.Main', {
                 tooltip: 'Refresh form Data',
                 // hidden:true,
                 handler: function (btn) {
-                    btn.up('panel').down('panel').setTitle('Hey refresh clicked!');
+                    var pnl = btn.up('panel');
+                    pnl.setTitle(pnl.getTitle() + ' : Hey refresh clicked!');
                 }
             },
             {
                 text: 'help',
                 tooltip: 'Get Help',
                 handler: function (btn) {
-                    btn.up('panel').down('panel').setTitle('Hey help clicked!');
+                    var pnl = btn.up('panel');
+                    pnl.setTitle(pnl.getTitle() + ' : Hey help clicked!');
                 }
             }]
         }
@@ -76,14 +80,16 @@ Ext.define('simple.view.main.Main', {
                 tooltip: 'Refresh form Data',
                 // hidden:true,
                 handler: function (btn) {
-                    btn.up('panel').down('panel').setTitle('Hey refresh clicked!');
+                    var pnl = btn.up('panel');
+                    pnl.setTitle(pnl.getTitle() + ' : Hey refresh clicked!');
                 }
             },
             {
                 text: 'help',
                 tooltip: 'Get Help',
                 handler: function (btn) {
-                    btn.up('panel').down('panel').setTitle('Hey help clicked!');
+                    var pnl = btn.up('panel');
+                    pnl.setTitle(pnl.getTitle() + ' : Hey help clicked!');
                 }
             }]
         }
@@ -98,14 +104,16 @@ Ext.define('simple.view.main.Main', {
                 tooltip: 'Refresh form Data',
                 // hidden:true,
                 handler: function (btn) {
-                    btn.up('panel').down('panel').setTitle('Hey refresh clicked!');
+                    var pnl = btn.up('panel');
+                    pnl.setTitle(pnl.getTitle() + ' : Hey refresh clicked!');
                 }
             },
             {
                 text: 'help',
                 tooltip: 'Get Help',
                 handler: function (btn) {
-                    btn.up('panel').down('panel').setTitle('Hey help clicked!');
+                    var pnl = btn.up('panel');
+                    pnl.setTitle(pnl.getTitle() + ' : Hey help clicked!');
                 }
             }]
         }
