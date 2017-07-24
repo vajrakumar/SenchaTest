@@ -13,8 +13,10 @@ describe("TestGrid.js", function () {
         confirmAction: function (action) {
             return ST.button('[text=' + action + ']').visible();
         },
-
-        registerSimlet: function (data) {
+        /**
+         * not able to make this work through calling this code from funciton so commented function and added directly
+         */
+        /* registerSimlet: function (data) {
             simManager.simlets = [];
 
             simManager.register({
@@ -23,7 +25,7 @@ describe("TestGrid.js", function () {
                     data: hardCodedData
                 }
             });
-        },
+        }, */
 
         loadStore: function () {
             store = grid.getStore();
@@ -36,12 +38,12 @@ describe("TestGrid.js", function () {
                 }
             });
 
-             // we are overriding the call of  "autoLoad: true," from /Users/vajrakumar/Sencha/Projects/workspace/stc-demo/app/store/Personnel.js
-             //We are trying to mock the data by overiding the call to laod data, so to ensure we test on our own data
+            // we are overriding the call of  "autoLoad: true," from /Users/vajrakumar/Sencha/Projects/workspace/stc-demo/app/store/Personnel.js
+            //We are trying to mock the data by overiding the call to laod data, so to ensure we test on our own data
 
             //recent_activity_store.model.setProxy(proxy);
             store.load(function (records, operation, success) {
-               // debugger;
+                // debugger;
             });
         }
     };
@@ -52,7 +54,18 @@ describe("TestGrid.js", function () {
                 delay: 30
             });
 
-            Test.registerSimlet();
+            //Test.registerSimlet();
+            /**
+             * not able to make this work through calling this code from funciton so commented function and added here
+             */
+            simManager.simlets = [];
+
+            simManager.register({
+                'resources/data/personnel.json': {
+                    type: 'json',
+                    data: hardCodedData
+                }
+            });
 
             done();
         });

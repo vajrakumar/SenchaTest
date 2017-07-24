@@ -10,13 +10,15 @@
             "globals": "*",
             "directory": "E2E",
             "page": "http://localhost:1841/stc-demo/",
-            "name": "E2E"
+            "name": "E2E",
+            "webdriverContext": "webdriver"
         },
         {
             "libs": [
                 {
                     "disabled": false,
-                    "path": "/stc-demo/test/data/personnel.js"
+                    "path": "/stc-demo/test/data/personnel.js",
+                    "type": "file"
                 }
             ],
             "coverageFilters": [],
@@ -26,5 +28,6 @@
             "name": "Unit",
             "page": ""
         }
-    ]
+    ],
+    "pageObjects": []
 }
